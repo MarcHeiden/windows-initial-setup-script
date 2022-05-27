@@ -1,0 +1,1 @@
+Start-Process -Verb Runas powershell -ArgumentList "-ExecutionPolicy Bypass", "-noexit", "-File $PSScriptRoot\script\win11-setup-script.ps1"
