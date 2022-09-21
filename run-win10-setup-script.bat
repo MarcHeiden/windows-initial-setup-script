@@ -1,2 +1,2 @@
-powershell -ExecutionPolicy Bypass -File "%cd%\run-win10-setup-script.ps1"
-
+@echo off
+powershell -Command "Start-Process powershell.exe -Verb RunAs -ArgumentList '-NoExit', '-NoProfile', '-ExecutionPolicy Bypass', '-File %~dp0script\win10-setup-script.ps1'" 
