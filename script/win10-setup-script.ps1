@@ -16,6 +16,11 @@ function removeMeetNowButtonFromTaskbar {
 }
 
 function main {
+    # Import functions
+    . $PSScriptRoot\essential.ps1
+    . $PSScriptRoot\tweaks.ps1
+    . $PSScriptRoot\winget.ps1
+    
     createRestorePoint -Description "Fresh Install"
     # essential
     Write-Host "Set essential settings:"
