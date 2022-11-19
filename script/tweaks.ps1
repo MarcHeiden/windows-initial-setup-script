@@ -19,7 +19,7 @@ function setComputerName {
     else {
         $name = "PC"
     }
-    Write-Hist "Set Computer Name to $name-WIN-$build..."
+    Write-Host "Set Computer Name to $name-WIN-$build..."
     Rename-Computer -NewName "$name-WIN-$build"
 }
 
